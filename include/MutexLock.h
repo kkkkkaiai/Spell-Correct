@@ -7,7 +7,7 @@
 #ifndef __SC_MUTEXLOCK_H__
 #define __SC_MUTEXLOCK_H__
 
-#include "Nocopyable.cc"
+#include "Nocopyable.h"
 #include <pthread.h>
 
 namespace sc

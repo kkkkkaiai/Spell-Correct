@@ -7,7 +7,7 @@
 #ifndef __SC_SOCKET_H__
 #define __SC_SOCKET_H__
 
-#include "Nocopyable.cc"
+#include "Nocopyable.h"
 
 namespace sc
 {
