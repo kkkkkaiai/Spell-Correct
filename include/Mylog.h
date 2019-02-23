@@ -33,13 +33,13 @@ private:
 
 }
 
-#define prefig(msg) string("[").append(__FILE__)\
+#define prefix(msg) string("[").append(__FILE__)\
 		.append(":").append(__FUNCTION__)\
 		.append(":").append(std::to_string(__LINE__))\
 		.append("]").append(msg).c_str()
 
-#define LogWarn(msg) wd::Mylog::getInstance()->warn(prefix(msg))
-#define LogInfo(msg) wd::Mylog::getInstance()->info(prefix(msg))
-#define LogError(msg) wd::Mylog::getInstance()->Error(prefix(msg))
-#define LogDebug(msg) wd::Mylog::getInstance()->Debug(prefix(msg))
+#define LogWarn(msg) sc::Mylog::getInstance()->warn(prefix(msg))
+#define LogInfo(msg) sc::Mylog::getInstance()->info(prefix(msg))
+#define LogError(msg) sc::Mylog::getInstance()->Error(prefix(msg))
+#define LogDebug(msg) sc::Mylog::getInstance()->Debug(prefix(msg))
 

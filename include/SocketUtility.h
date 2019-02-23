@@ -30,7 +30,7 @@ inline int createSocketFd()
 	return fd;
 }
 
-inline void serNonblock(int fd)
+inline void setNonblock(int fd)
 {
 	int flags = ::fcntl(fd, F_GETFL, 0);
 	flags |= O_NONBLOCK;

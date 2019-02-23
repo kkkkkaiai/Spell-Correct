@@ -21,7 +21,7 @@ public:
 	void start();
 	void join();
 
-	bool isRunning() const { return _isRunning };
+	bool isRunning() const { return _isRunning; };
 
 private:
 	virtual void run() = 0;
