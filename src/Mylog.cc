@@ -3,10 +3,13 @@
 #include <log4cpp/OstreamAppender.hh>
 #include <log4cpp/FileAppender.hh>
 #include <log4cpp/Priority.hh>
-#include <log4cpp/PatterLayout.hh>
+#include <log4cpp/PatternLayout.hh>
 
 #include <iostream>
 using std::cout;
+
+namespace  sc
+{
 
 Mylog * Mylog::_pInstance = NULL;
 
@@ -49,22 +52,24 @@ Mylog::Mylog()
 : _root(Category::getRoot().getInstance("root"))
 {
 	PatternLayout * patternlayout1 = new PatternLayout();
-	patternlayout1->setConvertionPattern("%d [%p] %m%n");
+	patternlayout1->setConversionPattern("%d [%p] %m%n");
 	PatternLayout * patternlayout2 = new PatternLayout();
-	patternlayout2->setConvertionPattern("%d [%p] %m%n");
+	patternlayout2->setConversionPattern("%d [%p] %m%n");
 
 	OstreamAppender * ostreamAppender = new OstreamAppender("ostreamAppender", &cout);
 	ostreamAppender->setLayout(patternlayout1);
 
-	FileAppender * fileAppender = new OstreamAppender("fileAppender", "../log/Server.log);
+	FileAppender * fileAppender = new FileAppender("fileAppender", "../log/Server.log");
 	fileAppender->setLayout(patternlayout2);
 
 	_root.addAppender(ostreamAppender);
 	_root.addAppender(fileAppender);
-	_root.serPriority(Priority::DEBUG);
+	_root.setPriority(Priority::DEBUG);
 }
 
 Mylog::~Mylog()
 {
 	Category::shutdown();
+}
+
 }
