@@ -27,7 +27,7 @@ public:
 
 	void nonblock();
 
-	static InetAddress getLockAddr(int sockfd);
+	static InetAddress getLocalAddr(int sockfd);
 	static InetAddress getPeerAddr(int sockfd);
 private:
 	int _sockfd;
