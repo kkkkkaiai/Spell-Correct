@@ -7,9 +7,6 @@
 
 using namespace std;
 
-namespace wd
-{
-
 class Task
 {
 public:
@@ -18,12 +15,16 @@ public:
 	virtual ~Task() {};
 };
 
+
+namespace sc
+{
+
 class Thread;
-class WorkThread;
+class WorkerThread;
 
 class Threadpool
 {
-	friend WorkThread;
+	friend WorkerThread;
 public:
 	Threadpool(size_t threadNum, size_t queSize)
 	: _threadNum(threadNum)
@@ -31,10 +32,10 @@ public:
 	, _taskQue(_queSize)
 	, _isExit(false)
 	{
-		_thread.reserve(_threadNum);
+		_threads.reserve(_threadNum);
 	}
 
-	~ThreadPoll();
+	~Threadpool();
 
 	void start();
 	void stop();

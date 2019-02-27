@@ -38,9 +38,9 @@ public:
 	void doPendingFunctors();
 	void wakeup();
 	
-	void setConnectionCallback(EpollCallback&&);
-	void setMessageCallback(EpollCallback&&);
-	void setCloseCallback(EpollCallback&&);
+	void setConnectionCallback(EpollCallback);
+	void setMessageCallback(EpollCallback);
+	void setCloseCallback(EpollCallback);
 
 private:
 	void waitEpollfd();

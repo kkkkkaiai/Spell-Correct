@@ -3,6 +3,7 @@
 #include <log4cpp/Category.hh>
 #include <iostream>
 #include <string>
+using std::string;
 using std::cout;
 using std::endl;
 
@@ -40,6 +41,6 @@ private:
 
 #define LogWarn(msg) sc::Mylog::getInstance()->warn(prefix(msg))
 #define LogInfo(msg) sc::Mylog::getInstance()->info(prefix(msg))
-#define LogError(msg) sc::Mylog::getInstance()->Error(prefix(msg))
-#define LogDebug(msg) sc::Mylog::getInstance()->Debug(prefix(msg))
+#define LogError(msg) sc::Mylog::getInstance()->error(prefix(msg))
+#define LogDebug(msg) sc::Mylog::getInstance()->debug(prefix(msg))
 

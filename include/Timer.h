@@ -27,13 +27,14 @@ public:
 private:
 	int createTimerFd();
 	void setTimerfd(int initialTime, int intervalTime);
+	void handleRead();
 
 private:
 	int _fd;
 	int _initialTime;
-	int intervalTime;
+	int _intervalTime;
 	TimerCallback _cb;
-	bool isStarted;
+	bool _isStarted;
 };
 
 }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Thread.h"
+#include "Threadpool.h"
 #include <iostream>
 using  namespace std;
 
@@ -23,9 +24,10 @@ public:
 	~WorkerThread() { cout << "~WorkerThread()" << endl; }
 
 private:
-	void run();
 	Threadpool & _threadpool;
+	void run(){
+		_threadpool.ThreadFunc();
+	}
 };
-
 
 }
