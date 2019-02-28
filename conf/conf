@@ -1,0 +1,7 @@
+ServerIP 192.168.4.56
+Port 9999
+ThreadpoolCap 4
+TaskQueSize 5
+cnDictPath ../data/cnDict.dat
+enDictPath ../data/enDict.dat
+cachePath ../data/Cache
