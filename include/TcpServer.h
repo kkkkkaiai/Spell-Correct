@@ -4,6 +4,7 @@
  /// @date    2019-02-24 03:47:43
  ///
  
+#pragma once
 #include "Acceptor.h"
 #include "EventLoop.h"
 #include "Mylog.h"
@@ -37,7 +38,6 @@ private:
 	TcpServerCallback _connectionCallback;
 	TcpServerCallback _messageCallback;
 	TcpServerCallback _closeCallback;
-
 };
 
 }
