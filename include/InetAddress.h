@@ -16,7 +16,7 @@ namespace sc
 class InetAddress
 {
 public:
-	InetAddress(short por);
+	InetAddress(short port);
 	InetAddress(const char * pIp, short port);
 	InetAddress(const struct sockaddr_in & addr);
 

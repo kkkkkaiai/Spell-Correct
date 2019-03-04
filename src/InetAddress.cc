@@ -32,6 +32,10 @@ InetAddress::InetAddress(const char *pIp, short port)
 	//inet_addr convert the Internet host address for dotted-decimal into binary data
 }
 
+InetAddress::InetAddress(const struct sockaddr_in & addr)
+: _addr(addr)
+{}
+
 const struct sockaddr_in * InetAddress::getSockAddrPtr() const
 {
 	return &_addr;

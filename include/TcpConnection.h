@@ -10,7 +10,6 @@
 #include "InetAddress.h"
 #include "Socket.h"
 #include "SocketIO.h"
-#include "Mylog.h"
 
 #include <string>
 #include <memory>

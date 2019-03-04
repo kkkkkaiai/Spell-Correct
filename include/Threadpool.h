@@ -1,6 +1,7 @@
 #pragma once
 
 #include "TaskQueue.h"
+#include "Thread.h"
 
 #include <vector>
 #include <memory>

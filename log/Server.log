@@ -1,0 +1,29 @@
+2019-03-04 09:20:42,132 [INFO] [src/MainServer.cc:start:37]Server Started
+2019-03-04 09:20:42,132 [INFO] [src/MyDict.cc:init:19]Dict Initialized.
+2019-03-04 09:20:42,132 [INFO] [src/CacheManager.cc:initCache:14]The Cache is initialized.
+2019-03-04 09:20:42,132 [WARN] [./include/WorkerThread.h:WorkerThread:20]New WorkerThread was created.
+2019-03-04 09:20:42,132 [WARN] [./include/WorkerThread.h:WorkerThread:20]New WorkerThread was created.
+2019-03-04 09:20:42,132 [WARN] [./include/WorkerThread.h:WorkerThread:20]New WorkerThread was created.
+2019-03-04 09:20:42,132 [WARN] [./include/WorkerThread.h:WorkerThread:20]New WorkerThread was created.
+2019-03-04 09:20:42,133 [INFO] [src/EventLoop.cc:loop:40]Loop start
+2019-03-04 09:20:47,135 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:20:52,133 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:20:57,134 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:21:02,133 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:21:07,133 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:21:12,134 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:21:17,133 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:22:15,822 [INFO] [src/MainServer.cc:start:37]Server Started
+2019-03-04 09:22:16,084 [INFO] [src/MyDict.cc:init:19]Dict Initialized.
+2019-03-04 09:22:16,084 [INFO] [src/CacheManager.cc:initCache:14]The Cache is initialized.
+2019-03-04 09:22:16,084 [WARN] [./include/WorkerThread.h:WorkerThread:20]New WorkerThread was created.
+2019-03-04 09:22:16,085 [WARN] [./include/WorkerThread.h:WorkerThread:20]New WorkerThread was created.
+2019-03-04 09:22:16,085 [WARN] [./include/WorkerThread.h:WorkerThread:20]New WorkerThread was created.
+2019-03-04 09:22:16,085 [WARN] [./include/WorkerThread.h:WorkerThread:20]New WorkerThread was created.
+2019-03-04 09:22:16,085 [INFO] [src/EventLoop.cc:loop:40]Loop start
+2019-03-04 09:22:21,086 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:22:26,085 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:22:31,085 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:22:36,085 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:22:41,086 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.
+2019-03-04 09:22:46,085 [WARN] [src/CacheManager.cc:periodUpdate:44]No cache to update in this period.

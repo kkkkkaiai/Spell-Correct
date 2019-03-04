@@ -45,6 +45,13 @@ void Threadpool::stop()
 	}
 }
 
+Threadpool::~Threadpool()
+{
+	if(!_isExit) {
+		stop();
+	}
+}
+
 void Threadpool::addTask(Task * ptask)
 {
 	_taskQue.push(ptask);
