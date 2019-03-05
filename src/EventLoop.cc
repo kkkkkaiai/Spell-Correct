@@ -103,7 +103,7 @@ void EventLoop::waitEpollfd()
 			else if(_eventsList[idx].data.fd == _eventfd)
 			{
 				handleRead();
-				cout << "> do PendingFunctors()" << endl;
+				//cout << "> do PendingFunctors()" << endl;
 				doPendingFunctors();
 			}
 			else
@@ -176,7 +176,7 @@ void EventLoop::doPendingFunctors()
 	{
 		Functor();
 	}
-	cout << "------------end------------" << endl;
+	cout << "----------------end------------------" << endl;
 }
 
 void EventLoop::handleRead()

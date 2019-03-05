@@ -54,9 +54,9 @@ The project has two part, *the dictionary part* and *the server part*.
 
 ##### Dictionay Part
 
-<u>If you want to build your own dictionary, you could put your corpus in ./Spell-Correct/GenDict/lib .</u>
+<u>If you want to build your own dictionary, you could put your corpus in Spell-Correct/GenDict/lib .</u>
 
-The Chinese corpus should be in the /cn, and the English in the /en.
+The Chinese corpus should be in the *cn*, and the English in the *en*.
 
 Then generate the library, you could do the follow:
 
@@ -66,7 +66,7 @@ make
 ./Pre
 ```
 
-After finished, the dictionary have been in /Spell-Correct/data.
+After finished, the dictionary have been in Spell-Correct/data.
 
 ##### Server Part
 
@@ -81,7 +81,8 @@ Then the server will be run on your machine.
 
 ## Ⅳ.Test
 
-In ./Spell-Correct/client, there has a client for test. You could use it to test the status of the server.
+In Spell-Correct/client, there has a client for test. You could use it to test the status of the server.
+And you must change the IP to yours in Spell-Correct/conf/conf and the client.cc.
 
 **THANKS.**
 

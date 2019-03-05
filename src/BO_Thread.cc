@@ -17,7 +17,7 @@ BoThread::BoThread(boThreadCallback &&cb)
 , _isRunning(false)
 , _cb(std::move(cb))
 {
-	cout << "BoThread(cb)" << endl;
+	//cout << "BoThread(cb)" << endl;
 }
 
 void BoThread::start()

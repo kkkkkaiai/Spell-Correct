@@ -18,10 +18,10 @@ public:
 	: _threadpool(threadpool)
 	{
 		LogWarn("New WorkerThread was created.");
-		cout << "WorkerThread()" << endl;
+		//cout << "WorkerThread()" << endl;
 	}
 
-	~WorkerThread() { cout << "~WorkerThread()" << endl; }
+	~WorkerThread() { /*cout << "~WorkerThread()" << endl;*/ }
 
 private:
 	Threadpool & _threadpool;

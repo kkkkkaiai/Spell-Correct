@@ -46,7 +46,7 @@ void QueryTask::process()
 	cout << actualWord << " = " << res << endl;
 	_conn->sendInLoop(res);
 	curCache->set(_queryWord, res);
-	cout << "Cache UPdated" << endl;
+	cout << "Cache Updated" << endl;
 }
 
 void QueryTask::queryIndex(const string& sin){
@@ -64,7 +64,7 @@ void QueryTask::queryIndex(const string& sin){
 		_resultque.push(instance);
 
 	}
-	cout << sin << " : " << _conn->getSockfd() << " " << pthread_self() <<  " " << _resultque.size() << _queryWord.substr(0, _queryWord.size()) << " |||" << endl;
+	cout << sin << " : " << _conn->getSockfd() << " " << pthread_self() <<  " " << _resultque.size() << " " << _queryWord.substr(0, _queryWord.size()) << " |||" << endl;
 }
 
 int QueryTask::getDis(const string& rhs){

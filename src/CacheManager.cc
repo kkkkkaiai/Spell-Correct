@@ -16,7 +16,7 @@ void CacheManager::initCache()
 
 Cache<>& CacheManager::getCache(){
 	auto it = _Thread2Cache.find(pthread_self());
-	cout << "judge it" << endl;
+	//cout << "judge it" << endl;
 	if(it == _Thread2Cache.cend()){
 		_Thread2Cache.insert(make_pair(pthread_self(), _cacheList.size()));
 		Cache<> newCache;
@@ -37,13 +37,13 @@ void CacheManager::periodUpdate(){
 		updated += c._newCacheCnt;
 		cout << c._newCacheCnt << endl;
 	}
-	cout << "----------Cache Update Start------" << endl;
+	cout << "----------Cache Update Start-----------" << endl;
 	int total = updated < _cacheList[0]._size ? updated : _cacheList[0]._size;
 	cout << "total = " << total << endl;
 	if(total == 0){
 		LogWarn("No cache to update in this period.");
 		cout << "No need to updated" << endl;
-		cout << "------------Cache Updarte end -------------" << endl;
+		cout << "----------Cache Update End-------------" << endl << endl;
 		return;
 	}
 	int ret = total;
@@ -84,6 +84,6 @@ void CacheManager::periodUpdate(){
 	_cacheList[0].writeToFile(_cacheDiskPath);
 	string logwarn = to_string(ret) + " cache on disk updated.";
 	LogWarn(logwarn);
-	cout << ret << "Cache ON Disk Updated" << endl;
-	cout << "------------Cache Updarte end -------------" << endl;
+	cout << ret << " Cache ON Disk Updated" << endl;
+	cout << "----------Cache Update End-------------" << endl << endl;
 }

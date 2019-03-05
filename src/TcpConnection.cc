@@ -35,7 +35,8 @@ TcpConnection::~TcpConnection()
 	if(!_isShutdownWrite){
 		_isShutdownWrite = true;
 	}
-	cout << "~TcpConnection" << endl;
+
+	//cout << "~TcpConnection" << endl;
 }
 
 string TcpConnection::receive()

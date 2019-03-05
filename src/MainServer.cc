@@ -11,10 +11,10 @@ CacheManager *g_cacheMgr = NULL;
 
 void onConnection(const TcpConnectionPtr &conn)
 {
-	cout << conn->toString() << endl;
+	//cout << conn->toString() << endl;
 	string loginfo = conn->toString() + " The link was established.";
 	LogInfo(loginfo);
-	conn->send("Connection Established.");
+	//conn->send("Connection Established.");
 }
 
 void onMessage(const sc::TcpConnectionPtr &conn)
@@ -35,9 +35,14 @@ void onClose(const sc::TcpConnectionPtr & conn)
 void MainServer::start()
 {
 	LogInfo("Server Started");
+	cout << "-----------------------------------" << endl;
+	cout << "Server started." << endl;
 	_dict = MyDict::getInstance(_configMap["cnDictPath"], _configMap["enDictPath"]);
 	_dict->init();
+	cout << "The index has been established." << endl;
 	_cacheMgr.initCache();
+	cout << "The cache is ready." << endl;
+	cout << "-----------------------------------" << endl;
 	_timer.start();
 	g_threadpool = &_threadpool;
 	g_cacheMgr = &_cacheMgr;

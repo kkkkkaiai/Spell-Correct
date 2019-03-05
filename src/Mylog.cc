@@ -56,13 +56,13 @@ Mylog::Mylog()
 	PatternLayout * patternlayout2 = new PatternLayout();
 	patternlayout2->setConversionPattern("%d [%p] %m%n");
 
-	OstreamAppender * ostreamAppender = new OstreamAppender("ostreamAppender", &cout);
-	ostreamAppender->setLayout(patternlayout1);
+	//OstreamAppender * ostreamAppender = new OstreamAppender("ostreamAppender", &cout);
+	//ostreamAppender->setLayout(patternlayout1);
 
 	FileAppender * fileAppender = new FileAppender("fileAppender", "../log/Server.log");
 	fileAppender->setLayout(patternlayout2);
 
-	_root.addAppender(ostreamAppender);
+	//_root.addAppender(ostreamAppender);
 	_root.addAppender(fileAppender);
 	_root.setPriority(Priority::DEBUG);
 }
